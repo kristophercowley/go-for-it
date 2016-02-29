@@ -2,7 +2,9 @@ angular.module('con4', [])
 	.controller('GameController', function($scope){
 		
 		$scope.newGame = function(){
-			/**
+			$scope.victory = false;
+            $scope.grid = buildGrid();
+            /**
 			 * set victory to false
 			 * $scope.grid = buildGrid();
 			 * This is connect 4 so red plays first
